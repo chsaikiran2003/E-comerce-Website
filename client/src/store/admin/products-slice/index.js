@@ -10,7 +10,7 @@ export const addNewProduct = createAsyncThunk(
   "/products/addnewproduct",
   async (formData) => {
     const result = await axios.post(
-      "https://mern-ecommerce-2024-master-server-2xgp.onrender.com/api/admin/products/add",
+      "https://e-comerce-website-1i0k.onrender.com/api/admin/products/add",
       formData,
       {
         headers: {
@@ -27,7 +27,7 @@ export const fetchAllProducts = createAsyncThunk(
   "/products/fetchAllProducts",
   async () => {
     const result = await axios.get(
-      "https://mern-ecommerce-2024-master-server-2xgp.onrender.com/api/admin/products/get"
+      "https://e-comerce-website-1i0k.onrender.com/api/admin/products/get"
     );
 
     return result?.data;
@@ -38,7 +38,7 @@ export const editProduct = createAsyncThunk(
   "/products/editProduct",
   async ({ id, formData }) => {
     const result = await axios.put(
-      `https://mern-ecommerce-2024-master-server-2xgp.onrender.com/api/admin/products/edit/${id}`,
+      `https://e-comerce-website-1i0k.onrender.com/api/admin/products/edit/${id}`,
       formData,
       {
         mode:"cors",
@@ -56,7 +56,7 @@ export const deleteProduct = createAsyncThunk(
   "/products/deleteProduct",
   async (id) => {
     const result = await axios.delete(
-      `https://mern-ecommerce-2024-master-server-2xgp.onrender.com/api/admin/products/delete/${id}`
+      `https://e-comerce-website-1i0k.onrender.com/api/admin/products/delete/${id}`
     );
 
     return result?.data;

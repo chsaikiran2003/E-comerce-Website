@@ -12,7 +12,7 @@ export const registerUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "https://mern-ecommerce-2024-master-server-2xgp.onrender.com/api/auth/register",
+      "https://e-comerce-website-1i0k.onrender.com/api/auth/register",
       formData,
       {
         mode: "cors",
@@ -29,7 +29,7 @@ export const loginUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "https://mern-ecommerce-2024-master-server-2xgp.onrender.com/api/auth/login",
+      "https://e-comerce-website-1i0k.onrender.com/api/auth/login",
       formData,
       {
         mode: "cors",
@@ -46,7 +46,7 @@ export const logoutUser = createAsyncThunk(
 
   async () => {
     const response = await axios.post(
-      "https://mern-ecommerce-2024-master-server-2xgp.onrender.com/api/auth/logout",
+      "https://e-comerce-website-1i0k.onrender.com/api/auth/logout",
       {},
       {
         mode: "cors",
@@ -63,7 +63,7 @@ export const checkAuth = createAsyncThunk(
 
   async () => {
     const response = await axios.get(
-      "https://mern-ecommerce-2024-master-server-2xgp.onrender.com/api/auth/check-auth",
+      "https://e-comerce-website-1i0k.onrender.com/api/auth/check-auth",
       {
         mode: "cors",
         withCredentials: true,

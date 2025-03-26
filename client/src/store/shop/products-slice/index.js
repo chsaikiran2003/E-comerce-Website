@@ -18,7 +18,7 @@ export const fetchAllFilteredProducts = createAsyncThunk(
     });
 
     const result = await axios.get(
-      `https://mern-ecommerce-2024-master-server-2xgp.onrender.com/api/shop/products/get?${query}`
+      `https://e-comerce-website-1i0k.onrender.com/api/shop/products/get?${query}`
     );
 
     console.log(result);
@@ -31,7 +31,7 @@ export const fetchProductDetails = createAsyncThunk(
   "/products/fetchProductDetails",
   async (id) => {
     const result = await axios.get(
-      `https://mern-ecommerce-2024-master-server-2xgp.onrender.com/api/shop/products/get/${id}`
+      `https://e-comerce-website-1i0k.onrender.com/api/shop/products/get/${id}`
     );
 
     return result?.data;
