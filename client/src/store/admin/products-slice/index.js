@@ -41,6 +41,7 @@ export const editProduct = createAsyncThunk(
       `https://mern-ecommerce-2024-master-server-2xgp.onrender.com/api/admin/products/edit/${id}`,
       formData,
       {
+        mode:"cors",
         headers: {
           "Content-Type": "application/json",
         },

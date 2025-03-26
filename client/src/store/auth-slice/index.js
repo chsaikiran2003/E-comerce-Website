@@ -15,6 +15,7 @@ export const registerUser = createAsyncThunk(
       "https://mern-ecommerce-2024-master-server-2xgp.onrender.com/api/auth/register",
       formData,
       {
+        mode: "cors",
         withCredentials: true,
       }
     );
@@ -31,6 +32,7 @@ export const loginUser = createAsyncThunk(
       "https://mern-ecommerce-2024-master-server-2xgp.onrender.com/api/auth/login",
       formData,
       {
+        mode: "cors",
         withCredentials: true,
       }
     );
@@ -47,6 +49,7 @@ export const logoutUser = createAsyncThunk(
       "https://mern-ecommerce-2024-master-server-2xgp.onrender.com/api/auth/logout",
       {},
       {
+        mode: "cors",
         withCredentials: true,
       }
     );
@@ -62,6 +65,7 @@ export const checkAuth = createAsyncThunk(
     const response = await axios.get(
       "https://mern-ecommerce-2024-master-server-2xgp.onrender.com/api/auth/check-auth",
       {
+        mode: "cors",
         withCredentials: true,
         headers: {
           "Cache-Control":
