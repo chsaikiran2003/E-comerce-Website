@@ -15,7 +15,6 @@ export const registerUser = createAsyncThunk(
       "https://e-comerce-website-1i0k.onrender.com/api/auth/register",
       formData,
       {
-        mode: "cors",
         withCredentials: true,
       }
     );
@@ -32,7 +31,6 @@ export const loginUser = createAsyncThunk(
       "https://e-comerce-website-1i0k.onrender.com/api/auth/login",
       formData,
       {
-        mode: "cors",
         withCredentials: true,
       }
     );
@@ -49,7 +47,6 @@ export const logoutUser = createAsyncThunk(
       "https://e-comerce-website-1i0k.onrender.com/api/auth/logout",
       {},
       {
-        mode: "cors",
         withCredentials: true,
       }
     );
@@ -65,7 +62,6 @@ export const checkAuth = createAsyncThunk(
     const response = await axios.get(
       "https://e-comerce-website-1i0k.onrender.com/api/auth/check-auth",
       {
-        mode: "cors",
         withCredentials: true,
         headers: {
           "Cache-Control":
